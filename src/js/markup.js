@@ -1,10 +1,9 @@
+// imports
+
+import refs from './refs';
 import menu from '../menu.json';
 import markupRender from '../templates/cards.hbs';
 
-const listRef = document.querySelector('.js-menu');
+// operation
 
-// console.log(menu);
-// console.log(markupRender);
-// console.log(listRef);
-
-listRef.insertAdjacentHTML('beforeend', markupRender(menu));
+refs.list.insertAdjacentHTML('beforeend', markupRender(menu));

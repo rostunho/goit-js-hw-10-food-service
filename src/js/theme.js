@@ -1,9 +1,8 @@
-// elements
+// import
 
-const refs = {
-  body: document.querySelector('body'),
-  checkbox: document.querySelector('#theme-switch-toggle'),
-};
+import refs from './refs';
+
+// themes
 
 const Theme = {
   LIGHT: 'light-theme',
@@ -30,11 +29,11 @@ function togglePageTheme() {
 }
 
 function saveTheme() {
-  localStorage.setItem('data-theme', refs.checkbox.checked);
+  localStorage.setItem('dark-theme', refs.checkbox.checked);
 }
 
 function loadTheme() {
-  const savedValue = localStorage.getItem('data-theme');
+  const savedValue = localStorage.getItem('dark-theme');
 
   if (savedValue) {
     refs.checkbox.checked = JSON.parse(savedValue);

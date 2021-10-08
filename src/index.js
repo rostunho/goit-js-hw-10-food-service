@@ -1,3 +1,4 @@
-// import './sass/main.scss';
-require('./js/theme');
-require('./js/markup');
+// import partials
+
+import './js/theme';
+import './js/markup';
